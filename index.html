@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mayank Kulkarni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+
+    <meta name="description" content="Create an image slider with HTML, CSS and JavaScript" />
+    <meta name="keywords" content="image slider, carousel, codepen, css, js" />
+
+    <!--bootstrap mob _ lap _ desk _ tab  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--for icons   -->
+    <script src="https://kit.fontawesome.com/2389a535bb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body>
+    <script src="/javascript/script.js"></script>
+
+    <!-- loader -->
+    <!-- <div class="content">
+      <img src="https://picsum.photos/300/300/?random" />
+    </div> -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+    <!-- loader ends -->
+
+
+    <nav class="navbar navbar-expand-md">
+        <!-- Brand -->
+        <img class="nav-image" src="/image/logo-black.png" <a class="navbar-brand" href="#"></a>
+
+        <!-- Toggler/collapsible button -->
+        <button style="color:black;" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#collapsibleNavbar">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar" style="color:black;">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/h t m l/4 0 4.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/h t m l/4 0 4.html">Projects</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/404.html">Blog</a>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/h t m l/4 0 4.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/h t m l/4 0 4.html">Contact</a>
+                </li>
+                <li class="nav-item" style="text-align: center;">
+                    <a class="nav-link" href="/h t m l/4 0 4.html"
+                        style="background-color: black;border-radius: 25%;padding:4px 20px;color:white;"><b>Hire</b></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--a  -->
+    <div id="hideDiv">
+        Announcement : This Website Is In Under Development
+    </div>
+
+
+    <header>
+
+        <!-- Video from coverr.co -->
+        <!-- <video class="video-bg" autoplay muted loop>
+            <source src="/video/VID_20231202_081015~2.mp4" type="video/mp4" />
+            <source src="/video/VID_20231202_081015~2.mp4" type="video/webm" />
+        </video> -->
+        <div class="slider-overflow">
+            <div class="container-slider">
+
+                <div class="slide-slider">
+
+
+                    <!-- <div class="item-slider" style="background-image: url(/image/head.jpg);">
+                    <div class="content-slider">
+                        <div class="name">Switzerland</div>
+                        <div class="des">Black color wow</div>
+                        <button>Web-Developer</button>
+                    </div>
+                </div> -->
+                    <div class="item-slider" style="background-image: url(/image/head2.jpg);">
+                        <div class="content-slider">
+                            <div class="name">AI</div>
+                            <div class="des">Machine Learning</div>
+                            <button>Artificial Intelligence</button>
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head3.jpg);">
+                        <div class="content-slider">
+                            <div class="name">VR</div>
+                            <div class="des">3D Games</div>
+                            <button>Virtual Reality</button>
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head4.jpg);">
+                        <div class="content-slider">
+                            <div class="name">Python</div>
+                            <div class="des">Task Automation/Website/Software/etc</div>
+                            <button>Web-Developer</button>
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head5.jpg">
+                        <div class="content-slider">
+                            <div class="name">Web-Development</div>
+                            <div class="des">Front-End</div>
+                            <button>Web-Development Front-End</button>
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head6.jpg);">
+                        <div class="content-slider">
+                            <div class="name">Web-Development</div>
+                            <div class="des">Back-End</div>
+                            <button>Web-Development Back-End</button>
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head6.jpeg);">
+                        <div class="content-slider">
+                            <div class="name">Java</div>
+                            <div class="des">Chat Bot</div>
+                            <!-- <button>Web-Developer</button> -->
+                        </div>
+                    </div>
+                    <div class="item-slider" style="background-image: url(/image/head7.jpeg);">
+                        <div class="content-slider">
+                            <div class="name">Js</div>
+                            <div class="des">Website/AI/etc</div>
+                            <button>JavaScript</button>
+                        </div>
+                    </div>
+                    <!-- <div class="item-slider" style="background-image: url(/image/head8.jpeg);">
+                    <div class="content-slider">
+                        <div class="name">Black Face</div>
+                        <div class="des">Black color wow</div>
+                        <button>Web-Developer</button>
+                    </div>
+                </div> -->
+
+                </div>
+
+                <div class="button-slider">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+            <script>
+                let next = document.querySelector('.next')
+                let prev = document.querySelector('.prev')
+
+                next.addEventListener('click', function () {
+                    let items = document.querySelectorAll('.item-slider')
+                    document.querySelector('.slide-slider').appendChild(items[0])
+                })
+
+                prev.addEventListener('click', function () {
+                    let items = document.querySelectorAll('.item-slider')
+                    document.querySelector('.slide-slider').prepend(items[items.length - 1]) // here the length of items = 6
+                })
+
+
+                let autoSlideInterval;
+
+                function startAutoSlide() {
+                    autoSlideInterval = setInterval(function () {
+                        let items = document.querySelectorAll('.item-slider')
+                        document.querySelector('.slide-slider').appendChild(items[0])
+                    }, 3000); // Change the interval as needed (in milliseconds)
+                }
+
+                function stopAutoSlide() {
+                    clearInterval(autoSlideInterval);
+                }
+
+                // Start auto-slide when the page loads
+                startAutoSlide();
+
+                // Stop auto-slide when the user interacts with the slider
+                document.querySelector('.slide-slider').addEventListener('mouseover', stopAutoSlide);
+                document.querySelector('.slide-slider').addEventListener('mouseout', startAutoSlide);
+            </script>
+        </div>
+    </header>
+
+
+
+    <!-- about me -->
+    <section class="about-section">
+        <div class="container2-fluid p-0">
+            <div class="row no-gutters position-relative">
+                <div class="left-header d-none d-lg-block col-lg-3 col-xl-4">
+                    <div class="v-center-box d-flex align-items-end text-uppercase">
+                        <h2 class="mb-0">About Me</h2>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-xl-8">
+                    <div class="main-content p-5">
+                        <div class="main-header mb-4">
+                            <h6 class="sub-heading text-uppercase d-block mb-2">Who I am</h6>
+                            <h1 class="main-heading d-inline-block text-uppercase pb-3 border-bottom">&lt; About &gt;
+                            </h1>
+                        </div>
+
+                        <div class="row mb-5">
+                            <div class="mb-5 mb-sm-4 col-md-4">
+                                <img src="/image/my-1.jpg" alt="Colorful Wall">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="about__text mb-5 mb-sm-4 mb-md-4">
+                                    <h3>I'm Mayank</h3>
+                                    <p class="m-0">Passionate programmer and web developer with
+                                        a year of experience excelling in hackathons and refining
+                                        skills through workshops. Proven expertise in designing
+                                        dynamic web applications and overcoming coding
+                                        challenges. Eager to contribute to cutting-edge projects
+                                        in the evolving field of web development.</p>
+                                </div>
+                                <br>
+                                <div class="about__skills">
+                                    <h3>Skills</h3>
+                                    <div class="row no-gutters mb-0 mb-sm-4">
+
+                                        <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                                            <div class="media">
+                                                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12"
+                                                    viewBox="0 0 384 512">
+                                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z" />
+                                                </svg>/<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
+                                                    viewBox="0 0 512 512">
+                                                    <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                                    <path
+                                                        d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z" />
+                                                </svg>
+                                                <div class="media-body">
+                                                    <h4 class="m-0">HTML/CSS</h4>
+                                                    <p class="m-0">
+                                                        HTML and CSS expert seamlessly blends design and
+                                                        functionality for visually stunning, responsive
+                                                        web experiences. Clean, semantic coding ensures
+                                                        optimal user engagement and navigation.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                                            <div class="media">
+                                                <i class="fab fa-js-square icon-18 mr-3"></i>
+                                                <div class="media-body">
+                                                    <h4 class="m-0">Javascript</h4>
+                                                    <p class="m-0">Proficient in JavaScript, I harness its
+                                                        power to develop dynamic and interactive web
+                                                        applications. Expertise extends to utilizing
+                                                        frameworks like React for efficient and user-friendly
+                                                        interfaces.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="row no-gutters mb-0 mb-sm-4">
+                                        <div class="mb-4 mb-sm-0 pr-sm-3 col-sm-6">
+                                            <div class="media">
+                                                <i class="fa-brands fa-java icon-18 mr-3"></i>
+                                                <div class="media-body">
+                                                    <h4 class="m-0">Java</h4>
+                                                    <p class="m-0">Java expert specializing in efficient, reliable
+                                                        coding for robust and scalable applications. Proficient in
+                                                        implementing Java frameworks to streamline software development
+                                                        and enhance performance.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-0 pl-sm-3 col-sm-6">
+                                            <div class="media">
+                                                <i class="fa-brands fa-python icon-18 mr-3"></i>
+                                                <div class="media-body">
+                                                    <h4 class="m-0">Python</h4>
+                                                    <p class="m-0">
+                                                        Proficient in Python, I leverage its versatility for diverse
+                                                        solutions, spanning web applications to data analysis, with
+                                                        expertise in building efficient and maintainable software
+                                                        systems using frameworks like Django.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="margin:auto;margin-top: -5%;">
+                                <a href="/about.html" class="button b-red">Know More</a>
+                                <style>
+                                    .b-red,
+                                    .b-red {
+                                        background: rgba(234, 110, 72, 1);
+                                        background: -moz-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+                                        background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(234, 110, 72, 1)), color-stop(100%, rgba(188, 26, 99, 1)));
+                                        background: -webkit-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+                                        background: -o-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+                                        background: -ms-linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+                                        background: linear-gradient(45deg, rgba(234, 110, 72, 1) 0%, rgba(188, 26, 99, 1) 100%);
+                                        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ea6e48', endColorstr='#bc1a63', GradientType=1);
+                                    }
+
+                                    .button {
+                                        display: inline-block;
+                                        position: relative;
+                                        border-radius: 3px;
+                                        text-decoration: none;
+                                        padding: .5em;
+                                        margin: .5em;
+                                        font-size: 2em;
+                                        font-weight: bold;
+                                        transition: all .5s;
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+
+                                    .button:hover {
+                                        text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
+                                    }
+
+                                    .button:hover:after {
+                                        left: 100%;
+                                        top: 100%;
+                                        bottom: 100%;
+                                        right: 100%;
+                                    }
+
+                                    .button:before {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        left: 0;
+                                        top: 0;
+                                        bottom: 0;
+                                        right: 0;
+                                        z-index: -1;
+                                        border-radius: 5px;
+                                        transition: all .5s;
+                                    }
+
+                                    .button:after {
+                                        content: '';
+                                        display: block;
+                                        position: absolute;
+                                        left: 2px;
+                                        top: 2px;
+                                        bottom: 2px;
+                                        right: 2px;
+                                        z-index: -1;
+                                        border-radius: 5px;
+                                        transition: all .5s;
+                                    }
+
+                                    /*END BASE BUTTON*/
+                                    /*ROTATE*/
+                                    .rot-360-noscoop:hover {
+                                        filter: hue-rotate(360deg);
+                                        transform: rotate(360deg);
+                                    }
+
+                                    .rot-135:hover {
+                                        filter: hue-rotate(135deg);
+                                    }
+
+                                    .rot-90:hover {
+                                        filter: hue-rotate(90deg);
+                                    }
+
+                                    /*END ROTATE*/
+                                </style>
+                            </div>
+                        </div>
+
+                        <div class="about-data">
+                            <div class="row no-gutters pt-5 border-top">
+                                <div class="mb-4 mb-md-0 pr-sm-3 p-md-0 col-sm-6 col-md-3">
+                                    <div class="media">
+                                        <i class="fas fa-mug-hot icon-18 mr-2"></i>
+                                        <div class="media-body">
+                                            <p class="data-number m-0 font-weight-bold">5,000+</p>
+                                            <p class="m-0 text-uppercase">Cups of coffee/Tea</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 mb-md-0 pl-sm-3 p-md-0 col-sm-6 col-md-3">
+                                    <div class="media">
+                                        <i class="fas fa-code icon-18 mr-2"></i>
+                                        <div class="media-body">
+                                            <p class="data-number m-0 font-weight-bold">19,238+</p>
+                                            <p class="m-0 text-uppercase">Lines of code</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 mb-md-0 pr-sm-3 p-md-0 col-sm-6 col-md-3">
+                                    <div class="media">
+                                        <i class="fas fa-bus icon-18 mr-2"></i>
+                                        <div class="media-body">
+                                            <p class="data-number m-0 font-weight-bold">2,000+</p>
+                                            <p class="m-0 text-uppercase">Buses taken</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mb-4 mb-md-0 pl-sm-3 p-md-0 col-sm-6 col-md-3">
+                                    <div class="media">
+                                        <i class="far fa-smile-wink icon-18 mr-2"></i>
+                                        <div class="media-body">
+                                            <p class="data-number m-0 font-weight-bold">1,500+</p>
+                                            <p class="m-0 text-uppercase">Awkward winks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--news   -->
+    <!-- <header class="headera" id="home">
+                            <div class="container flex" id="newsection2" style="">
+                                <div class="texta">
+                                    <h1 class="mb" style="" data-aos="zoom-out-right">
+
+                                        <span></span> Fitness<br>
+                                        <p style="font-size: 14px;color: #7faf27;">Unisex Gym</p>
+                                    </h1>
+
+                                    <p class="mb">
+                                    <h3 data-aos="fade-up" data-aos-duration="3000">Start Your Transformation Journey</h3><br>
+                                    <p data-aos="fade-up" data-aos-duration="3000">Get in shape and build strength at Hulk Fitness,<br> the
+                                        leading gym conveniently located at the centre of Nashik</p>
+                                    </p>
+                                </div>
+
+                                <div class="visual" data-aos="zoom-out-left" data-aos-duration="1800">
+                                    <img src="/image/black-face.jpeg" alt="" />
+                                </div>
+                            </div>
+                        </header>
+
+                        <style>
+
+                        </style> -->
+
+
+    <!--  -->
+
+    <!-- projects -->
+    <div class="projects">
+
+        <br>
+        <h1 class="main-heading d-inline-block text-uppercase pb-3 border-bottom">&lt; Projects &gt;
+        </h1>
+        <br>
+        <div class="product-container">
+
+
+
+
+            <div class="product-card">
+                <video class="miniiframe" autoplay muted loop height="250">
+                    <source src="/video/nasa-web.mp4" type="video/mp4" />
+                </video>
+                <h3 class="product-name">NASA Space App Challenge 2023</h3>
+                <p class="product-description">Hackathon</p>
+                <div class="product-price">
+                    <p class="des-background">HTML</p>
+                    <p class="des-background">CSS</p>
+                    <p class="des-background">JAVASCRIPT</p>
+                </div>
+                <!-- <button class="add-to-cart-button">Add to Cart</button> -->
+            </div>
+
+
+
+
+
+            <div class="product-card">
+                <video class="miniiframe" autoplay muted loop height="250">
+                    <source src="/video/Light-Bulbs.mp4" type="video/mp4" />
+                </video>
+                <h3 class="product-name">Blub Animation</h3>
+                <p class="product-description">Just For Learing </p>
+                <div class="product-price">
+                    <p class="des-background">HTML</p>
+                    <p class="des-background">CSS</p>
+                    <p class="des-background">JAVASCRIPT</p>
+                </div>
+                <!-- <button class="add-to-cart-button">Add to Cart</button> -->
+            </div>
+
+
+
+
+
+
+            <div class="product-card">
+                <video class="miniiframe" autoplay muted loop height="250">
+                    <source src="/video/Photo-Gallery.mp4" type="video/mp4" />
+                </video>
+                <h3 class="product-name">Photo Gallery</h3>
+                <p class="product-description">Fun</p>
+                <div class="product-price">
+                    <p class="des-background">HTML</p>
+                    <p class="des-background">CSS</p>
+                    <p class="des-background">JAVASCRIPT</p>
+                </div>
+                <!-- <button class="add-to-cart-button">Add to Cart</button> -->
+            </div>
+
+
+
+
+
+
+            <div class="product-card">
+                <video class="miniiframe" autoplay muted loop height="250">
+                    <source src="/video/Ghost-pointer.mp4" type="video/mp4" />
+                </video>
+                <h3 class="product-name">Ghost Pointer</h3>
+                <p class="product-description">Pointer Property</p>
+                <div class="product-price">
+                    <p class="des-background">HTML</p>
+                    <p class="des-background">CSS</p>
+                    <p class="des-background">JAVASCRIPT</p>
+                </div>
+                <!-- <button class="add-to-cart-button">Add to Cart</button> -->
+            </div>
+
+
+
+
+
+            <div class="product-card">
+                <video class="miniiframe" autoplay muted loop height="250">
+                    <source src="/video/Cutiess.mp4" type="video/mp4" />
+                </video>
+                <h3 class="product-name">Teddy Animation</h3>
+                <p class="product-description">Teddy Listening music while coding</p>
+                <div class="product-price">
+                    <p class="des-background">HTML</p>
+                    <p class="des-background">CSS</p>
+                    <p class="des-background">JAVASCRIPT</p>
+                </div>
+
+                <!-- <button class="add-to-cart-button">Add to Cart</button> -->
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- End #projects -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--contact form  -->
+    <!-- connecting to google sheet -->
+    <section id="contact">
+        <div class="contact-box">
+            <div class="contact-links">
+                <h2>CONTACT</h2>
+                <div class="links">
+                    <ul class="wrapper">
+                        <!-- <li class="icon facebook">
+                            <span class="tooltip">Facebook</span>
+                            <span><i class="fab fa-facebook-f"></i></span>
+                        </li> -->
+                        <!-- <li class="icon twitter">
+                            <span class="tooltip">Twitter</span>
+                            <span><i class="fab fa-twitter"></i></span>
+                        </li> -->
+                        <li class="icon instagram">
+                            <span class="tooltip">Instagram</span>
+                            <span><i class="fab fa-instagram"></i></span>
+                        </li>
+                        <li class="icon github">
+                            <span class="tooltip">Github</span>
+                            <span><i class="fab fa-github"></i></span>
+                        </li>
+                        <!-- <li class="icon youtube">
+                            <span class="tooltip">Youtube</span>
+                            <span><i class="fab fa-youtube"></i></span>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form method="post"
+                    action="https://script.google.com/macros/s/AKfycbz3RBZ1AFLpLru2AJV7ikt9gxumPbgsKkBOf5SFwBavPl4-Lk7_MYKRC795fRCeOEGv/exec"
+                    name="contact-form">
+                    <p style="color:#b6685b ;">*All Fills Are Required</p>
+                    <div class="form-item">
+                        <input type="text" name="your-name" required>
+                        <label>Name:</label>
+                    </div><br>
+                    <div class="form-item">
+                        <input type="text" name="your-number" required>
+                        <label>Number:</label>
+                    </div><br>
+                    <div class="form-item">
+                        <input type="email" name="your-email" required>
+                        <label>Email:</label>
+                    </div><br>
+                    <div class="form-item">
+                        <textarea class="" name="message" required></textarea>
+                        <label>Message:</label>
+                    </div><br>
+                    <button class="loading-button" type="submit"><span>Send</span></button>
+
+                    <script>const button = document.getElementsByClassName("loading-button")[0];
+                        button.addEventListener("click", function () {
+                            button.classList.add("loading");
+                            // simulate getting something from the server
+                            setTimeout(function () {
+                                button.classList.remove("loading");
+                                button.classList.add("success");
+
+                                setTimeout(function () {
+                                    button.classList.remove("success");
+                                }, 2000);
+                            }, 3000);
+                        });</script>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="/javascript/Google Sheet.js"></script>
+
+
+    <!-- <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Ct6xo6lt3IQ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/Ct6xo6lt3IQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">View this post on Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/Ct6xo6lt3IQ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by @mayank_2310_k</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script> -->
+    <!-- 
+    <main class="subscribe">
+      <div class="subscribe-card">
+        <h2>Stay up to date!</h2>
+        <p>
+          Subscribe to our weekly newsletter for <br />
+          the latest news and tips.
+        </p>
+
+        <form class="form-email" action="https://formsubmit.co/mac.1023.k@gmail.com" method="POST">
+           
+             <input type="email" name="email" placeholder="Gmail" required>
+
+          <p role="alert" class="error-message">
+            *Please enter a valid email address!
+          </p>
+
+          <input type="submit" class="send-button" >
+
+        </form>
+      </div>
+    </main> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
